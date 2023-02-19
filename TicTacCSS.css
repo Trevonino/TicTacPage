@@ -1,0 +1,129 @@
+body {
+    background: #3B3739;
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#backgroundBlur {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0.75;
+}
+
+#gamemodePopup {
+    display: flex;
+    flex-direction: column;
+    background: #3B3739;
+    border-radius: 25px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 35%;
+    align-items: center;
+}
+
+h1 {
+    color: #F2EEEA;
+    width: 100%;
+    font-size: 60px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+p {
+    color: #F2EEEA;
+    font-size: 30px;
+    padding: 0px 40px 0px 40px;
+}
+
+table {
+    border: 1px solid black;
+    border-spacing: 30px;
+    background: #8D5C59;
+    border-radius: 25px;
+}
+
+td {
+    border: 1px solid black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background: #F2EEEA;
+    border-radius: 25px;
+    font-size: 90px;
+    padding: 30px;
+    width: 65px;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+#ticTacToeGame-Container {
+    display: flex;
+    justify-content: center;
+}
+
+#bottomItems-Container {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#gameStatus {
+    color: #F2EEEA;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-size: 40px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.gameButton {
+    border: 1px solid black;
+    background: #8D5C59;
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 25px;
+    color: #F2EEEA;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    transition: 0.5s;
+    margin: 30px 40px;
+}
+
+.gameButton:active {
+    transition: translate(0px, 2px) !important;
+    background: #5e4746 !important;
+    transition: 0.1s !important;
+}
+
+.gameButton:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 30px;
+}
+
+.modeButton {
+    background: #8D5C59;
+    border: none;
+    padding: 5%;
+    width: 55%;
+    font-size: 20px;
+    color: #F2EEEA;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.modeButton:active {
+    transition: translate(0px, 2px) !important;
+    background: #5e4746 !important;
+    transition: 0.1s !important;
+}

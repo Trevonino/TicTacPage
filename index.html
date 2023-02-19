@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+
+
+<head>
+    <title>Tic Tac Toe Page</title>
+    <!-- Script that adds AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- Script that adds JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="TicTacCSS.css">
+</head>
+
+<body>
+
+    <div id="backgroundBlur"></div>
+    <div id="gamemodePopup">
+            <p>Select <br> Gamemode:</p>
+            <button id="vsPlayer" class="modeButton" onclick="chooseMode(0)">VS. Player</button>
+            <button id="vsCPU" class="modeButton" onclick="chooseMode(1)">VS. CPU</button>
+    </div>
+
+
+    <h1>Tic Tac Toe</h1>
+    <div id="ticTacToeGame-Container">
+        <table>
+            <tr>
+                <td onclick="handleCellClicked(this)" data-cell-index="0">&nbsp;</td>
+                <td onclick="handleCellClicked(this)" data-cell-index="1">&nbsp;</td>
+                <td onclick="handleCellClicked(this)" data-cell-index="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td onclick="handleCellClicked(this)" data-cell-index="3">&nbsp;</td>
+                <td onclick="handleCellClicked(this)" data-cell-index="4">&nbsp;</td>
+                <td onclick="handleCellClicked(this)" data-cell-index="5">&nbsp;</td>
+            </tr>
+            <tr>
+                <td onclick="handleCellClicked(this)" data-cell-index="6">&nbsp;</td>
+                <td onclick="handleCellClicked(this)" data-cell-index="7">&nbsp;</td>
+                <td onclick="handleCellClicked(this)" data-cell-index="8">&nbsp;</td>
+            </tr>
+        </table>
+    </div>
+    <div id="bottomItems-Container">
+        <h id="gameStatus">It's X's turn.</h>
+        <div>
+            <button id="resetGameButton" onclick="restartGame();" class="gameButton">Reset Game</button>
+            <button id="backTurnButton" onclick="backTurn();" class="gameButton">Go Back Turn</button>
+        </div>
+    </div>
+
+    <!-- Script For Game Logic -->
+    <script src="TicTacLogic.js"></script>
+    <script src="BotLogic.js"></script>
+
+</body>
